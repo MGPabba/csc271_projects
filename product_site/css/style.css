@@ -1,6 +1,42 @@
 /* Mithilesh Pabba */
 /* This is the css for the website*/
 
+/* Header that contains logo and navigation links */
+.header {
+    overflow: hidden;
+    background-color: blueviolet;
+    padding: 10px;
+}
+
+.header a {
+    float: right;
+    color: blue;
+    padding: 10px;
+}
+
+.header a:hover {
+    background-color: lightblue;
+    color: red;
+}
+
+.header a.active {
+    background-color: gray;
+    color: white;
+}
+
+/* Main content that contains all of the elements within the body */
+.content {
+    width: 90%;
+    background-color: goldenrod;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.content img {
+    float: right;
+    margin: 10px;
+}
+
 /* Background Color */
 body {
     background-color: rgb(43, 226, 141);
@@ -39,4 +75,22 @@ a:visited {
 
 a:hover {
     color: red;
+}
+
+/* Responsive Web Design */
+@media screen and (max-width: 600px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .content {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .content img {
+        max-width: 100%;
+    }
 }
