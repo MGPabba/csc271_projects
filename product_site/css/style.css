@@ -37,11 +37,12 @@
 
 /* Main content that contains all of the elements within the body */
 .content {
-    float: center;
-    width: 95%;
+    float: left;
+    width: 100%;
     background-color: goldenrod;
     padding: 10px;
     margin: 10px auto;
+    box-sizing: border-box;
 }
 
 /* Images */
