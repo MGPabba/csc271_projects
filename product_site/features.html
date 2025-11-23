@@ -3,15 +3,24 @@
 
 <!-- HTML DOCTYPE Declaration -->
 <!DOCTYPE html>
-<html>
+<!-- HTML Document Structure with one set of html, head, and body -->
+<html lang="en">
     <head>
         <!-- Title -->
-        <title>Features</title>
+        <title>Meal Planner</title>
+
+        <!-- Declaring Character Encoding -->
+        <meta charset="UTF-8">
+
         <!-- Stylesheet Reference -->
         <link href="css/style.css" type="text/css" rel="stylesheet">
+
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
+        <!-- Header that contains logo and navigation links -->
         <div class="header">
             <img src="images/logo.png" alt="Meal Planner Logo" width="200">
 
@@ -20,6 +29,7 @@
             <a href="index.html">Home</a>
         </div>
 
+        <!-- Main content that contains all of the elements within the body -->
         <div class="content">
             <!-- Main Heading -->
             <h1>
@@ -52,8 +62,8 @@
             </table>
 
             <!-- Images -->
-            <img src="images/food1.jpg" alt="Food Photo 1" width="200">
-            <img src="images/food2.jpg" alt="Food Photo 2" width="200">
+            <img src="images/food1.jpg" alt="Food Photo: ingredients" width="200">
+            <img src="images/food2.jpg" alt="Food Photo: meal" width="200">
 
             <h3>
                 Suggest a Feature
@@ -61,14 +71,14 @@
 
             <!-- Form -->
             <form>
-                <p>Name:</p>
-                <input type="text" name="name"/> <br/>
+                <label for="name">Name:</label> <br>
+                <input type="text" id="name" name="name" required> <br>
 
-                <p>Feature Suggestion:</p>
-                <textarea name="feature"></textarea> <br/>
+                <label for="feature">Feature Suggestion:</label> <br>
+                <textarea id="feature" name="feature" required></textarea> <br>
 
-                <p>Submit:</p>
-                <input type="submit" value="Submit Feature Suggestion"/>
+                <label for="submit"></label>
+                <input type="submit" id="submit" value="Submit Feature Suggestion">
             </form>
         </div>
     </body>
