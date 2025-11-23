@@ -10,28 +10,41 @@
 
 .header a {
     float: right;
-    color: blue;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 20px;
     padding: 10px;
+    background-color: green;
+    text-decoration: none;
+}
+
+.header a:link {
+    color: yellow;
+}
+
+.header a:visited {
+    color: yellow;
 }
 
 .header a:hover {
-    background-color: lightblue;
+    background-color: lightgreen;
     color: red;
 }
 
 .header a.active {
-    background-color: gray;
+    background-color: darkgreen;
     color: white;
 }
 
 /* Main content that contains all of the elements within the body */
 .content {
-    width: 90%;
+    float: center;
+    width: 95%;
     background-color: goldenrod;
     padding: 10px;
     margin: 10px auto;
 }
 
+/* Images */
 .content img {
     float: right;
     margin: 10px;
@@ -61,7 +74,7 @@ p {
 }
 
 /* Class Selector */
-.big-link {
+a.big-link {
     font-size: 20px;
 }
 
@@ -88,7 +101,11 @@ a:hover {
 
     .content {
         width: 100%;
-        font-size: 18px;
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: 20px;
     }
 
     .content img {
