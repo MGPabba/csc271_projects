@@ -1,5 +1,5 @@
 // Mithilesh Pabba
-// This is a script to display a recipe
+// This is a script to display a recipe example
 
 // Variables
 var recipeName = "Schezwan Egg Rice";
